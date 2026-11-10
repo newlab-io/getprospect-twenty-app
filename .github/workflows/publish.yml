@@ -37,12 +37,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
+          # Latest Node 24: its bundled npm (>= 11.5.1) supports trusted publishing.
+          node-version: 24
           registry-url: https://registry.npmjs.org
-
-      - name: Update npm
-        # Trusted publishing requires npm 11.5.1 or later.
-        run: npm install -g npm@latest
 
       - name: Install Twenty CLI
         run: npm install -g twenty@2.57.0
