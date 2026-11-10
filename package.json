@@ -1,6 +1,6 @@
 {
   "name": "@getprospect/twenty-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GetProspect for Twenty: find and verify business emails, enrich People and Companies, and auto-enrich new records with workflows.",
   "keywords": [
     "twenty-app",

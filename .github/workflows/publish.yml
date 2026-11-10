@@ -31,10 +31,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version-file: '.nvmrc'
           registry-url: https://registry.npmjs.org
 
       - name: Update npm
@@ -46,6 +49,9 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --immutable
+
+      - name: Lint, typecheck and test
+        run: yarn lint && yarn typecheck && yarn test
 
       - name: Publish to npm
         # Uncomment if publishing from a private source repo: npm rejects
