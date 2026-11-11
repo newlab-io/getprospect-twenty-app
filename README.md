@@ -29,6 +29,8 @@ Fields you already filled in (name, job title, LinkedIn, address, website) are n
 2. In GetProspect, copy your API key from **Settings > API** ([app.getprospect.com](https://app.getprospect.com)).
 3. In Twenty, open **Settings > Applications > GetProspect** and paste the key into **GetProspect API key**.
 
+Requires Twenty 2.57 or later.
+
 Try it: add a person with only a business email. Within a minute their name, job title and LinkedIn appear, and their company is enriched.
 
 ## Pricing
@@ -60,13 +62,3 @@ Nothing else leaves your workspace, and no AI provider is involved. GetProspect 
 
 - Email: support@getprospect.com
 - Issues: [github.com/newlab-io/getprospect-twenty-app/issues](https://github.com/newlab-io/getprospect-twenty-app/issues)
-
-## Development
-
-```bash
-yarn install
-yarn lint && yarn typecheck && yarn test
-twenty app build
-```
-
-Requires Twenty 2.57 or later.

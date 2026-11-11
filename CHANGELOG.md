@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- README is the marketplace About tab: user-facing only; developer notes moved to CONTRIBUTING.md.
+
 ## 1.0.1
 
 - Published from GitHub Actions with npm provenance.
